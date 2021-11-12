@@ -12,3 +12,5 @@ use Illuminate\Support\facades\Route;
 */
 
 Route::get('/', 'PostController@index');
+// {}の中に書いたものが動的に変動　LaravelのDIを利用するためidではなくpost
+Route::get('/posts/{post}', 'PostController@show');
