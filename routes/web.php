@@ -11,8 +11,4 @@ use Illuminate\Support\facades\Route;
 |
 */
 
-Route::get('/',function(){
-    return view('index');
-});
-
-Route::get('/posts', 'PostController@index');
+Route::get('/', 'PostController@index');
