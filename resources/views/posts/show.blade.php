@@ -10,6 +10,7 @@
     </head>
     <body>
         <h1 class="title">
+            <p class="edit">[<a href="/posts/{{ $post->id }}/edit">edit</a>]</p>
             {{ $post->title }}
         </h1>
         <div class="content">
