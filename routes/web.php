@@ -12,5 +12,9 @@ use Illuminate\Support\facades\Route;
 */
 
 Route::get('/', 'PostController@index');
+// 新規作成画面を表示する
+Route::get('/posts/create', 'PostController@create');
 // {}の中に書いたものが動的に変動　LaravelのDIを利用するためidではなくpost
 Route::get('/posts/{post}', 'PostController@show');
+
+Route::post('/posts', 'PostController@store');
